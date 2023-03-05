@@ -1,0 +1,6 @@
+
+RewriteEngine on
+RewriteCond %{HTTP_HOST} ^safebox\.world$ [OR]
+RewriteCond %{HTTP_HOST} ^www\.safebox\.world$
+RewriteRule ^(.*)$ "https\:\/\/www\.safebox\.world\/$1" [R=301,L]
+
